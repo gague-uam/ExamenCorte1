@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(int argc, char const *argv[])
 {
@@ -6,7 +7,7 @@ int main(int argc, char const *argv[])
     int precioCompra, precioVenta, existencia, ganancia, gananciaTotal;
 
     printf("\n Escriba el nombre del producto: ");
-    scanf("%c", &nombre);
+    scanf("%s", &nombre);
     printf("\n Escriba el precio de compra: ");
     scanf("%d", &precioCompra);
     printf("\n Escriba el precio de venta: ");
@@ -17,7 +18,7 @@ int main(int argc, char const *argv[])
     ganancia = precioVenta - precioCompra;
     gananciaTotal = ganancia * existencia;
 
-    printf("\n Nombre: %c", nombre);
+    printf("\n Nombre: %s", nombre);
     printf("\n Precio Compra: %d", precioCompra);
     printf("\n Precio Venta: %d", precioVenta);
     printf("\n Existencia: %d", existencia);
